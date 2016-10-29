@@ -83,9 +83,9 @@
     NSPoint p2 = _curveView.controlPoint2;
     
     // generate function here
-    NSDictionary *keywordAttribute = @{ NSForegroundColorAttributeName : [NSColor colorWithDeviceRed:0.419 green:0.124 blue:0.684 alpha:1.000]};
-    NSDictionary *textAttribute = @{ NSForegroundColorAttributeName : [NSColor blackColor]};
-    NSDictionary *numberAttribute = @{ NSForegroundColorAttributeName : [NSColor colorWithDeviceRed:0.000 green:0.195 blue:0.990 alpha:1.000]};
+    NSDictionary *keywordAttribute = @{ NSForegroundColorAttributeName : [NSColor colorWithDeviceRed:0.419 green:0.124 blue:0.684 alpha:1.000], NSFontAttributeName : [NSFont userFixedPitchFontOfSize:11]};
+    NSDictionary *textAttribute = @{ NSForegroundColorAttributeName : [NSColor blackColor], NSFontAttributeName : [NSFont userFixedPitchFontOfSize:11]};
+    NSDictionary *numberAttribute = @{ NSForegroundColorAttributeName : [NSColor colorWithDeviceRed:0.000 green:0.195 blue:0.990 alpha:1.000], NSFontAttributeName : [NSFont userFixedPitchFontOfSize:11]};
     
     NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:@"CAMediaTimingFunction" attributes:keywordAttribute];
     [str appendAttributedString:[[NSAttributedString alloc] initWithString:@" *timingFunction = [" attributes:textAttribute]];
